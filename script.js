@@ -26,6 +26,7 @@ const commands = {
     "Web/Software Developer Intern, Proyección Laboral, Bogotá (Dec 2023 - Feb 2024) — built 4+ client websites, developed Evamailer, saved clients 15 hours/week"
   ],
   education: [
+    "M.S. in Cybersecurity, NYU Tandon School of Engineering — starting Fall 2026",
     "B.S. Computing and Information Technology, RIT — expected May 2026",
     "A.A. Applied Computer Technology, RIT — May 2024"
   ],
