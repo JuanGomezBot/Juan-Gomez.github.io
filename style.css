@@ -1,0 +1,233 @@
+:root{
+    --bg: #0a0e0f;
+    --bg-alt: #10161a;
+    --text: #C9D1D9;
+    --amber: #E8A33D;
+    --blue: #4FA8E0;
+    --red: #E0524f;
+    --panel: #0d1315;
+    --border: #1c2528;
+    --error: #FF0000;
+    --font-mono: "JetBrains Mono", monospace;
+    --font-heading: "Space Grotesk", sans-serif;
+    
+
+
+}
+.cv-section {
+  margin-top: 40px;
+}
+.cv-section h2 {
+  font-family: var(--font-heading);
+  color: var(--amber);
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.cv-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  border: 1px solid var(--amber);
+  color: var(--amber);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+.cv-btn:hover {
+  background: var(--amber);
+  color: var(--bg);
+}
+.projects {
+  margin-top: 40px;
+}
+.projects h2 {
+  font-family: var(--font-heading);
+  color: var(--amber);
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+}
+.card h3 {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  margin: 0 0 4px;
+}
+.card .meta {
+  color: var(--blue);
+  font-size: 12px;
+  margin: 0 0 8px;
+}
+.card p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+body{
+    background-color: var(--bg);
+    color:var(--text);
+    font-family: var(--font-mono);
+
+}
+h1{
+    font-family: var(--font-heading);
+}
+.wrap{
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.term-body::-webkit-scrollbar {
+    width: 6px;
+}
+.term-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+.term-body::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+}
+.terminal{
+    border: 1px solid;
+    border-color: var(--border);
+    background-color: var(--panel);
+    border-radius: 8px;
+    overflow:hidden;
+    margin-top: 24px;
+}
+.ascii {
+    white-space: pre;
+    line-height: 1.2;
+}
+.term-bar{
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--bg-alt);
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+
+}
+.dot{
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.dot-amber{
+    background-color: var(--amber);
+}
+.dot-blue{
+    background-color: var(--blue);
+}
+.dot-red{
+    background-color: var(--red);
+}
+.term-body{
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 220px;
+    max-height: 320px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.cursor{
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: var(--amber);
+    animation: blink 1s step-end infinite;
+    position: absolute;
+    left: 0;
+}
+.line-error{
+    color:var(--error)
+}
+.term-input-row{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px 16px;
+    
+}
+#termInput{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 14px;
+    caret-color: transparent;
+}
+.mirror{
+    position:absolute;
+    visibility: hidden;
+    white-space: pre;
+    font-family: inherit;
+    font-size: 14px;
+}
+.input-wrap{
+    position: relative;
+    flex: 1;
+}
+.contact {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.contact h2 {
+  font-family: var(--font-heading);
+  color: var(--amber);
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+.contact input,
+.contact textarea {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+.contact button {
+  background: var(--amber);
+  color: var(--bg);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  width: fit-content;
+}

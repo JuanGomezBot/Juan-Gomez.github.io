@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Gomez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <h1>Juan Gomez</h1>
+    
+    <div class="terminal">
+        <div class="term-bar">
+            <span class="dot dot-amber">
+            
+            </span>
+            <span class="dot dot-blue">
+
+            </span>
+            <span class="dot dot-red">
+
+            </span>
+            <span class="term-title">
+                juan@bogota: ~
+            </span>
+        </div>
+        <div id="termBody" class="term-body">
+            <p>Hola/Hello</p>
+        </div>
+        <div class="term-input-row">
+            <span>juan@bogota:~$</span>
+                <div class="input-wrap">
+                    <input type="text" id="termInput" autocomplete="off">
+                    <span id="mirror" class="mirror"></span>
+                    <span class="cursor"></span>
+                </div>
+        </div>
+    </div>
+    <section class="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+        <div class="card">
+        <h3>Smart Antivirus</h3>
+        <p class="meta">CLI · Python · Jan 2025 - Present</p>
+        <p>Heuristic/signature-based scanning engine with modular design, tuned to minimize false positives.</p>
+        </div>
+        <div class="card">
+        <h3>Ashmod</h3>
+        <p class="meta">Discord Bot · Sep 2025 - Present</p>
+        <p>Moderation, ticketing, leveling, and economy features handling 1,000+ weekly interactions.</p>
+        </div>
+        <div class="card">
+        <h3>Beehive Monitor</h3>
+        <p class="meta">Arduino + Raspberry Pi · School project</p>
+        <p>Tracks temperature and CO2 levels inside a beehive, with a live dashboard and SMS alerts.</p>
+        </div>
+        <div class="card">
+        <h3>Evamailer</h3>
+        <p class="meta">Tkinter · Python</p>
+        <p>Automated email campaigns, processing 300+ emails per run with CSV and attachment support.</p>
+        </div>
+    </div>
+    </section>
+    <section class="cv-section">
+    <h2>Resume</h2>
+    <p>Download the full resume as a PDF.</p>
+    <a class="cv-btn" href="Juan_Gomez_Resume.pdf" download>Download CV</a>
+    </section>
+    <section class="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/xeeyrbqa" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+        <button type="submit">Send message</button>
+    </form>
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
